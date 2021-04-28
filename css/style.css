@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(#eec66c, white ,#f7e6a3 );
     height : 100%;
+    width: 100%!important;
 }
 
 /* *************   HEADER  **************** */
@@ -20,15 +21,18 @@ nav img {
     background-color: #f7e6a3!important;
 }
 
+.orborder {
+    border : 2px solid  #f7e6a3;
+    color : #f7e6a3;
+}
+
 /*  ********** MAIN ************ */
 
-
-
-
-
-div.test {
-    height: 600px;
+article img {
+    max-width: 90%;
 }
+
+
 
 
 /* *************** FOOTER ************** */
@@ -42,5 +46,6 @@ div.test {
 footer {
     color : #f7e6a3;
     font-size: 0.8em;
+    max-width : 100%!important;
 }
 

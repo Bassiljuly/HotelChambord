@@ -3,13 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Hotel Chambord</title>
 </head>
 <body>
     <header>
-        
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../img/logoChambrodbeige.gif" alt="logo-CHambord"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="chambres.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Chambres
+                    </a>
+                    <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item dark" href="chambres.html">Les chambres</a></li>  
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item dark" href="chambreClassic.html">Classic</a></li>
+                      <li><a class="dropdown-item dark" href="chambreConfort.html">Confort</a></li>
+                      <li><a class="dropdown-item dark" href="chambreLuxe.html">Deluxe</a></li>
+                      <li><a class="dropdown-item dark" href="suite.html">Suite</a></li>
+                    </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="restaurant.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Restaurant
+                        </a>
+                        <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item dark" href="#">Carte restaurant</a></li>
+                          <li><a class="dropdown-item dark" href="#">Carte brasserie</a></li>
+                          <li><a class="dropdown-item dark" href="#">Carte degustation</a></li>
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="spa.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Spa
+                        </a>
+                        <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item dark" href="spa.html">Le spa</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item dark" href="#">Soin détente</a></li>
+                          <li><a class="dropdown-item dark" href="#">Soin découverte</a></li>
+                          <li><a class="dropdown-item dark" href="#">Soin relaxant</a></li>
+                          <li><a class="dropdown-item dark" href="#">Soin plaisir</a></li>
+                          <li><a class="dropdown-item dark" href="#">Soin évasion</a></li>
+                        </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Reservation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="acces.html">Accès</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2 or" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn orborder" type="submit">Recherche</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
 
@@ -19,8 +80,8 @@
     </footer>
    <!-- Appel jquery via cdn gogle a mettre avant le script perso -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-   <script src="./bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+   <script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
    <!-- Appel du script -->
-   <script src="./js/script.js"></script>
+   <script src="../js/script.js"></script>
 </body>
 </html>
