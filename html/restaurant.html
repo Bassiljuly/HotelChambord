@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Hotel Chambord</title>
 </head>
 <body>
     <header>
+      <!-- NAVIGATION -->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html"><img src="../img/logoChambrodbeige.gif" alt="logo-CHambord"></a>
@@ -37,9 +40,9 @@
                         Restaurant
                         </a>
                         <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item dark" href="#">Carte restaurant</a></li>
-                          <li><a class="dropdown-item dark" href="#">Carte brasserie</a></li>
-                          <li><a class="dropdown-item dark" href="#">Carte degustation</a></li>
+                          <li><a class="dropdown-item dark" href="restaurant.html#brasserie">Carte brasserie</a></li>
+                          <li><a class="dropdown-item dark" href="restaurant.html#degustation">Carte degustation</a></li>
+                          <li><a class="dropdown-item dark" href="restaurant.html#resto">Carte restaurant</a></li>
                         </ul>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="spa.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,40 +51,212 @@
                         <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
                           <li><a class="dropdown-item dark" href="spa.html">Le spa</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item dark" href="#">Soin détente</a></li>
-                          <li><a class="dropdown-item dark" href="#">Soin découverte</a></li>
-                          <li><a class="dropdown-item dark" href="#">Soin relaxant</a></li>
-                          <li><a class="dropdown-item dark" href="#">Soin plaisir</a></li>
-                          <li><a class="dropdown-item dark" href="#">Soin évasion</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soindetente">Soin détente</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soindecouverte">Soin découverte</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soinrelaxant">Soin relaxant</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soinplaisir">Soin plaisir</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soinevasion">Soin évasion</a></li>
                         </ul>
-                  <li class="nav-item">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="html/chambres.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          L'hôtel
+                          </a>
+                          <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item dark" href="quiSommesNous.html">Qui sommes nous?</a></li>
+                            <li><a class="dropdown-item dark" href="evenements.html">Actualités</a></li>
+                            <li><a class="dropdown-item dark" href="actualites.html">Evènements</a></li>
+                            <li><a class="dropdown-item dark" href="acces.html">Accès</a></li>
+                            <li><a class="dropdown-item dark" href="contact.html">Contact</a></li>
+                          </ul>
+                  <li class="nav-item btn btnresanav ms-9">
                     <a class="nav-link" href="reservation.html">Reservation</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                  <li class="nav-item ms-7">
+                    <a class="nav-link panier" href="panier.html"><i class="fas fa-cart-arrow-down"></i></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="acces.html">Accès</a>
-                  </li>
+                  <li class="nav-item dropdown ms-3">
+                    <a class="nav-link dropdown-toggle" href="chambres.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    FR
+                    </a>
+                    <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item dark" href="#">FR</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item dark" href="#">EN</a></li>
+                    </ul>
+                </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-2 or" type="search" placeholder="Search" aria-label="Search">
+                  <input class="form-control me-2 or" type="search" placeholder="Rechercher" aria-label="Search"  required>
                   <button class="btn orborder" type="submit">Recherche</button>
                 </form>
               </div>
             </div>
           </nav>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-   <!-- Appel jquery via cdn gogle a mettre avant le script perso -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-   <script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
-   <!-- Appel du script -->
-   <script src="../js/script.js"></script>
+    <main class="pb-3">
+     <!-- ************* lien fixed gauche ****************** -->
+     <div class="container contour liensleft">
+      <div class="row">
+        <div class="col-1 d-none d-lg-block">
+          <button><i class="fas fa-print bg-dark"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <button><i class="fas fa-share-alt bg-dark share"></i></button>
+        </div>
+        <div class="col-1 none reseaux">
+          <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
+          <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
+        </div>
+      </div>
+    </div>
+     <!-- Presentation -->
+     <section class="imgtop">
+      <img src="../img/prez-resto1.jpeg" class="w-100" alt="">
+    </section>
+      <section class="articlesaccueilrestaurant container contour mt-3 mb-4"><!-- ajout titre de la page -->
+        <article class="menurestaurant1 row text-center lh-lg w-75 pb-4 mauto justify-content-center"> <!-- ajout titre de la page -->
+            <div class="col-lg-10">
+                <h1 class="fs-1 mt-5 mb-5">Hotel Chambord</h1>
+                <h2 id="restaurant">Notre restaurant</h2>
+                <p class="restaurantgras fs-5">Exigeant <span class="kamel">.</span>  Gourmand <span class="kamel">. </span> Attentionné</p>
+               
+                <p class="fs-5">Entrez dans un univers chaleureux et traditionnel, au style classique, et vivez le ballet du service ininterrompu savamment chorégraphié par notre merveilleuse équipe.
+                  L’adresse de l’avenue Montaigne baignée d’un charme légendaire. Une institution parisienne où s’amuse depuis toujours le Tout-Paris, dans une ambiance magnétique. Le restaurant offre un cocktail d’élégance enivrant les plus grands de ce monde.
+                  </p>
+            </div>
+        </article>
+        <article class="article1 row mt-5  align-items-center mb-5 text-center lh-lg">
+            <div class="col-lg-6 col-sm-11 justify-content-center align-items-cente">
+                <img src="../img/resto3.jpg" alt="image3 restaurant">
+            </div>
+            <div class="col-lg-6 col-sm-11 justify-content-center">
+              <h2>Nos horaires:</h2>
+              <p class="carte3">Les membres de notre équipe seront ravis de vous y accueillir.</p>
+               <p><span class="restaurantgras">Ouvert :</span> Tous les jours</p>
+                  <p><span class="restaurantgras">Service déjeuner :</span> 12H À 13H30</p>
+                  <p><span class="restaurantgras">Service déjeuner :</span> 12H À 13H30</p>
+                  <p><span class="restaurantgras">Dîner :</span>19H À 21H15<p>
+                <p>Pour vos réunions de famille, le restaurant est privatisable le samedi midi. </p>
+              <p>Dôté d'un salon privé et d'une grande salle, le restaurant peut accueillir jusqu'à 60 personnes.</p>
+              <p><a href="reservation.html" class="btn orfont btn-dark mt-3">Reserver <i class="far fa-arrow-alt-circle-right"></i></a></p>
+             </div>
+        </article>
+        <article class="article1 row mt-5 mb-5 align-items-center text-center lh-lg mb-4">
+            <div class="col-lg-6 col-sm-11 justify-content-center align-items-center">
+                <h2>Nos cartes</h2>
+                <p class="carte3">Le Chef vous propose <span class="restaurantgras">un menu au coeur du produit</span>  afin de privilégier <span class="restaurantgras">producteurs et artisans locaux</span>.</p>
+              <p class="restaurantgras">Découvrez nos cartes à chaque moments de la journée :</p>
+                <ul class="restaurantpuce2">
+                  <li><i class="fas fa-dot-circle pe-3 kamel"></i><span class="restaurantgras"> Carte Brasserie :</span> formule disponible uniquement les midis</li>
+                  <li><i class="fas fa-dot-circle pe-3 kamel"></i><span class="restaurantgras"> Carte Dégustation :</span> formule disponible de 15h30 à 18h</li>
+                  <li><i class="fas fa-dot-circle pe-3 kamel"></i><span class="restaurantgras"> Carte Restaurant :</span> formule disponible uniquement le soir à partir de 19h</li> 
+                </ul>
+                <p><a href="#cartes" class="btn or border-3 border-dark mt-5">Nos cartes</a></p>
+            </div>
+            <div class="col-lg-6 col-sm-11 justify-content-center ">
+                <img src="../img/prez_restaurant2.jpg" alt="photo2 restaurant">
+            </div>
+        </article>
+       <!-- Menu -->
+        <article class="menurestaurant1 row text-center lh-lg w-75 pb-4 mauto justify-content-center"  id ="brasserie">
+          <div class="col-lg-10">
+            <h2 class="carte2 fs-1 mt-5 mb-2" id="cartes">Nos cartes</h2>
+            <!-- MENU BRASSERIE -->
+            <p class="carte2 fs-1">§</p>
+              <h3 class="carte2">Carte "Brasserie" TTC | 75 euros</h3>
+              <p class="carte3">Entrée + Plat ou Plat + Dessert - 59€ Boissons non comprises</p> 
+              <p class="carte3">Entrée + Plat + Dessert - 75€ Boissons non comprises</p>
+              <ul class="restaurantpuce">
+                <li class="carte2">Entrée au choix:</li>
+                <li>Soupe à l'oignon gratinée</li>
+                <li>Entrée du jour</li>
+                <li class="carte2">Plat du jour :</li>
+                <li>Risotto snacké aux légumes verts</li>
+                <li>Carpaccio de boeuf mariné</li>
+                <li class="carte2">Dessert au choix :</li>
+                <li>Teurgoule du chef</li>
+                <li>Moelleux au chocolat</li>
+              </ul>
+          </div>
+        </article>
+        <!-- MENU DEGUSTATION -->
+        <article class="menurestaurant1 row text-center lh-lg w-75 pb-4 mauto justify-content-center" id="degustation">
+          <div class="col-lg-10">
+            <h3 class="carte1">Carte "Dégustation" TTC | 90 euros</h3>
+              <p class="carte3">Entrée + Plat ou Plat + Dessert - 70€ Boissons non comprises</p>
+              <p class="carte3">Entrée + Plat + Dessert - 90€ Boissons non comprises</p>
+              <ul class="restaurantpuce">
+                <li class="carte2">Entrée au choix:</li>
+                <li>Soupe à l'oignon gratinée</li>
+                <li>Entrée du jour</li>
+                <li class="carte2">Plat du jour :</li>
+                <li>Risotto snacké aux légumes verts</li>
+                <li>Carpaccio de boeuf mariné</li>
+                <li class="carte2">Dessert au choix :</li>
+                <li>Teurgoule du chef</li>
+                <li>Moelleux au chocolat</li>
+              </ul>
+            </div>
+          </article>
+          <!-- MENU DEGUSTATION -->
+          <article class="menurestaurant row text-center lh-lg w-75 pb-4 mauto justify-content-center" id="resto">
+            <div class="col-lg-10">
+              <h3 class="carte1">Carte "Restaurant" TTC | 90 euros</h3>
+                <p class="carte3">Entrée + Plat ou Plat + Dessert - 75€ Boissons non comprises</p>
+                <p class="carte3">Entrée + Plat + Dessert - 90€ Boissons non comprises</p>
+                <ul class="restaurantpuce">
+                  <li class="carte2">Entrée au choix:</li>
+                  <li>Soupe à l'oignon gratinée</li>
+                  <li>Entrée du jour</li>
+                  <li class="carte2">Plat du jour :</li>
+                  <li>Risotto snacké aux légumes verts</li>
+                  <li>Carpaccio de boeuf mariné</li>
+                  <li class="carte2">Dessert au choix :</li>
+                  <li>Teurgoule du chef</li>
+                  <li>Moelleux au chocolat</li>
+                </ul>
+            </div>
+          </article>
+      </section> 
+    <!-- *************** Inscription NewsLetter **************-->
+    <div class="container w-lg-50 w-75 border mt-5 border-secondary border-2">
+      <div class="row justify-content-center text-center">
+        <h3> NewsLetter</h3>
+        <form action="script.js" class="col-6 newsletter">
+          <label for="exampleInputEmail1" class="form-label">Inscription à notre NewsLetter</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <button type="submit " class="btn mt-2 mb-2 dark">S'abonner</button>
+        </form>
+      </div>
+    </div>
+  </main>      
+   <!-- *************  FOOTER ************ -->
+<!--  Liens -->
+<footer class="container contour footer bg-dark m-0">
+  <div class="row justify-content-center text-center pt-3">
+    <div class="col-sm-6 col-lg-3 px-0"><a href="avis.html">Avis</a></div>
+    <div class="col-sm-6 col-lg-2 px-0"><a href="presse.html">Presse</a></div>
+    <div class="col-sm-6 col-lg-2 px-0"><a href="recrutement.html">Recrutement</a></div>
+    <div class="col-sm-6 col-lg-2 px-0"><a href="mentionsLegales.html">Mentions légales</a></div>
+    <div class="col-sm-6 col-lg-2 px-0"><a href="conditionsGeneralesVente.html">Condititions générales de vente</a></div>
+  </div>
+  <div class="row mt-3 justify-content-center text-center">
+    <div class="col-6"><img src="../img/logoChambrodbeige.gif">
+      <p> Hôtel Chambord - 1 avenue Montaigne 75008 PARIS</p>
+    </div>
+    <div class="row">
+      <p class="col-12 text-center mb-0 mt-1"> © 2021 - Site non commercial réalisé dans le cadre d'un examen</p>
+      <p class="col-12 text-center m-0">Réalisé par : Marie VIDAL & Julie BASSIL</p>
+    </div>
+</footer>
+<!-- Appel fontawesome -->
+<script src="https://kit.fontawesome.com/abf72c1229.js" crossorigin="anonymous"></script>
+<!-- Appel jquery via cdn gogle a mettre avant le script perso -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+<!-- Appel du script -->
+<script src="../js/script.js"></script>
 </body>
 </html>

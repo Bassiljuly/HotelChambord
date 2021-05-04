@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Hotel Chambord</title>
 </head>
 <body>
     <header>
+      <!-- NAVIGATION -->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html"><img src="../img/logoChambrodbeige.gif" alt="logo-CHambord"></a>
@@ -37,9 +40,9 @@
                         Restaurant
                         </a>
                         <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item dark" href="#">Carte restaurant</a></li>
-                          <li><a class="dropdown-item dark" href="#">Carte brasserie</a></li>
-                          <li><a class="dropdown-item dark" href="#">Carte degustation</a></li>
+                          <li><a class="dropdown-item dark" href="restaurant.html#brasserie">Carte brasserie</a></li>
+                          <li><a class="dropdown-item dark" href="restaurant.html#degustation">Carte degustation</a></li>
+                          <li><a class="dropdown-item dark" href="restaurant.html#resto">Carte restaurant</a></li>
                         </ul>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="spa.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,40 +51,126 @@
                         <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
                           <li><a class="dropdown-item dark" href="spa.html">Le spa</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item dark" href="#">Soin détente</a></li>
-                          <li><a class="dropdown-item dark" href="#">Soin découverte</a></li>
-                          <li><a class="dropdown-item dark" href="#">Soin relaxant</a></li>
-                          <li><a class="dropdown-item dark" href="#">Soin plaisir</a></li>
-                          <li><a class="dropdown-item dark" href="#">Soin évasion</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soindetente">Soin détente</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soindecouverte">Soin découverte</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soinrelaxant">Soin relaxant</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soinplaisir">Soin plaisir</a></li>
+                          <li><a class="dropdown-item dark" href="spa.html#soinevasion">Soin évasion</a></li>
                         </ul>
-                  <li class="nav-item">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="html/chambres.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          L'hôtel
+                          </a>
+                          <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item dark" href="quiSommesNous.html">Qui sommes nous?</a></li>
+                            <li><a class="dropdown-item dark" href="evenements.html">Actualités</a></li>
+                            <li><a class="dropdown-item dark" href="actualites.html">Evènements</a></li>
+                            <li><a class="dropdown-item dark" href="acces.html">Accès</a></li>
+                            <li><a class="dropdown-item dark" href="contact.html">Contact</a></li>
+                          </ul>
+                  <li class="nav-item btn btnresanav ms-9">
                     <a class="nav-link" href="reservation.html">Reservation</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                  <li class="nav-item ms-7">
+                    <a class="nav-link panier" href="panier.html"><i class="fas fa-cart-arrow-down"></i></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="acces.html">Accès</a>
-                  </li>
+                  <li class="nav-item dropdown ms-3">
+                    <a class="nav-link dropdown-toggle" href="chambres.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    FR
+                    </a>
+                    <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item dark" href="#">FR</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item dark" href="#">EN</a></li>
+                    </ul>
+                </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-2 or" type="search" placeholder="Search" aria-label="Search">
+                  <input class="form-control me-2 or" type="search" placeholder="Rechercher" aria-label="Search"  required>
                   <button class="btn orborder" type="submit">Recherche</button>
                 </form>
               </div>
             </div>
           </nav>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-   <!-- Appel jquery via cdn gogle a mettre avant le script perso -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-   <script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
-   <!-- Appel du script -->
-   <script src="../js/script.js"></script>
+    <main class="pb-3">
+     <!-- ************* lien fixed gauche ****************** -->
+     <div class="container contour liensleft">
+      <div class="row">
+        <div class="col-1 d-none d-lg-block">
+          <button><i class="fas fa-print bg-dark"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <button><i class="fas fa-share-alt bg-dark share"></i></button>
+        </div>
+        <div class="col-1 none reseaux">
+          <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
+          <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
+        </div>
+      </div>
+    </div>
+      <!-- ***************** Contenu principal  ***************** -->
+      <section class="cgv container contour  mb-5 text-center justify-content-center mauto">
+        <h3  id="cvg"class="text-center pt-5 pb-5">Qui sommes nous ?</h3>
+        <div class="row mauto justify-content-center align-items-center">
+          <div class="col-3">
+            <img src="../img/qsn.jpg" alt="hotel de luxe">
+          </div>
+          <div class="col-5 justify-content-center">
+                <p style="text-align: justify;">Dans le paysage parisien de l’hôtellerie de luxe, il faut distinguer une histoire particulière et sans égale, celle de la famille Baverez.
+                Cent quinze ans de présence d’investissement et d’implication au quotidien pour la création et le développement d’une entreprise 100% familiale et française. L’histoire débute au début du siècle dernier. Lorsque Léonard Tauber, fondateur du Regina (1900), du Majestic (1907), et du Raphael  (1925), meurt en 1944, il a déjà confié les rênes de ses hôtels à Constant Baverez, son bras-droit et associé.
+                </p>
+               <p style="text-align: justify;">C’est en prenant sa suite qu’il devient le premier d’une longue lignée dans l’histoire de l’hôtellerie de luxe en préservant la pérennité d’un patrimoine familial. Ce groupe demeure l’un des fleurons du luxe à la française, tout en ayant réussi à garder à travers les décennies son indépendance et sa particularité. C’est ensuite au tour du Docteur Paul Baverez, fils de Constant, de prendre la direction du groupe. Il fera à son tour appel à sa fille, Françoise, qui le rejoindra dès 1961 pour gérer les trois établissements.
+                </p>
+               <p style="text-align: justify;">De l’avenue Kléber à la rue la Pérouse, en passant par la place des Pyramides, les trois hôtels ont su préserver à la fois leur cachet historique et leurs caractéristiques respectives.
+                  Le Regina, inauguré lors de l’Exposition Universelle en 1900, enchante autant les touristes que les Parisiens ou les hommes d’affaires : face au Louvre et aux Tuileries, au cœur du premier arrondissement parisien, il est situé dans un écrin de verdure, à deux pas des plus grandes maisons de couture et proche des quartiers d’affaires parisiens.Palace de charme s’il en est, Le Raphael, construit en 1925, décoré de tapisseries et de meubles anciens, lie son histoire à celle du monde de la littérature, de la musique, du cinéma et de la politique.</p>
+                  <p style="text-align: justify;">
+                  Plus récent, parce que totalement rénové en 2010, le Majestic Hôtel-Spa, situé rue La Pérouse dans le XVIème arrondissement, est à la fois plus intimiste et plus moderne. L'hôtel s’est doté d’un superbe spa, d’une magnifique piscine et d’une salle de fitness ouverts à tous.Issue d’une lignée de bâtisseurs de palaces parisiens, Françoise Baverez, Présidente du conseil d’Administration du groupe et sa fille, Véronique Valcke, nommée Directeur général en 2010, perpétuent de génération en génération le mythe du Raphael, du Regina et du Majestic Hôtel-Spa au service d’une clientèle exigeante.</p>
+                </div>
+                <div class="col-3">
+                  <img src="../img/qsn1.jpg" alt="hotel de luxe">
+                </div>
+            </div>
+      </section>
+    <!-- *************** Inscription NewsLetter **************-->
+    <div class="container w-lg-50 w-75 border mt-5 border-secondary border-2">
+      <div class="row justify-content-center text-center">
+        <h3> NewsLetter</h3>
+        <form action="script.js" class="col-6 newsletter">
+          <label for="exampleInputEmail1" class="form-label">Inscription à notre NewsLetter</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <button type="submit " class="btn mt-2 mb-2 dark">S'abonner</button>
+        </form>
+      </div>
+    </div>
+  </main>      
+     <!-- *************  FOOTER ************ -->
+<!--  Liens -->
+<footer class="container contour footer bg-dark m-0">
+  <div class="row justify-content-center text-center pt-3">
+    <div class="col-sm-6 col-lg-3 px-0"><a href="avis.html">Avis</a></div>
+    <div class="col-sm-6 col-lg-2 px-0"><a href="presse.html">Presse</a></div>
+    <div class="col-sm-6 col-lg-2 px-0"><a href="recrutement.html">Recrutement</a></div>
+    <div class="col-sm-6 col-lg-2 px-0"><a href="mentionsLegales.html">Mentions légales</a></div>
+    <div class="col-sm-6 col-lg-2 px-0"><a href="conditionsGeneralesVente.html">Condititions générales de vente</a></div>
+  </div>
+  <div class="row mt-3 justify-content-center text-center">
+    <div class="col-6"><img src="../img/logoChambrodbeige.gif">
+      <p> Hôtel Chambord - 1 avenue Montaigne 75008 PARIS</p>
+    </div>
+    <div class="row">
+      <p class="col-12 text-center mb-0 mt-1"> © 2021 - Site non commercial réalisé dans le cadre d'un examen</p>
+      <p class="col-12 text-center m-0">Réalisé par : Marie VIDAL & Julie BASSIL</p>
+    </div>
+</footer>
+<!-- Appel fontawesome -->
+<script src="https://kit.fontawesome.com/abf72c1229.js" crossorigin="anonymous"></script>
+<!-- Appel jquery via cdn gogle a mettre avant le script perso -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+<!-- Appel du script -->
+<script src="../js/script.js"></script>
 </body>
 </html>

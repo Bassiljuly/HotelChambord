@@ -1,13 +1,21 @@
+
 body {
-    background: linear-gradient(#eec66c, white ,#f7e6a3 );
     height : 100%;
     width: 100%!important;
+    position : absolute;
+    top : 18%;
+    font-family: 'Playfair Display', serif;
 }
 
 /* *************   HEADER  **************** */
 
+header {
+    position: absolute;
+}
+
 nav a{
     color : #f7e6a3!important;
+    font-size: 1.1em;
 }
 
 nav img {
@@ -17,28 +25,483 @@ nav img {
     color : black!important;
 }
 
-.or {
-    background-color: #f7e6a3!important;
-}
-
 .orborder {
     border : 2px solid  #f7e6a3;
     color : #f7e6a3;
 }
 
+.btnresanav {
+    background: #f7e6a3!important ;
+    padding : 0
+}
+
+.btnresanav a {
+    color :black!important;
+}
+/* ajout d'une classe margin-left 9em et 7em pour la nav */
+.ms-9 {
+ margin-left : 9em!important;
+}
+
+.ms-7 {
+    margin-left: 7em!important;
+}
+
+/* ****************    CAROUSSEL TEXTE ******************* */
+
+.carousel-caption {
+
+    position: absolute;
+    text-shadow:3px 1px 2px #555555;
+    z-index:10;
+    font-size: xx-large;
+    text-align: center;
+    /* CENTRE LE TEXTE */
+    top:50%;
+    transform: translateY(-50%);
+    bottom:initial
+    }
+
+/*  *************  PAGE CONTACT **************  */
+
+.contact .formcontact {
+    text-align : center;
+    border : 3px solid  #f7e6a3;
+    padding : 5em;
+    border-radius : 20px;
+    background: linear-gradient(#f7e6a3, white, #f7e6a3);
+}
+
+.formcontact input, .formcontact select {
+    border-radius : 20px;
+}
+
+/*   ****************   LIEN FIXE GAUCHE  ************* */
+
+.liensleft {
+    position : fixed;
+    left: 0.5em;
+    top : 50%;
+    z-index: 10;
+}
+
+
+
+.liensleft img {
+    max-width: 4em ;
+   
+}
+
+.liensleft i {
+    color : #f7e6a3;
+    font-size : 2em;
+    padding : 0.5em;
+    border-radius: 50%;
+    /* background-color: darkgrey; */
+}
+
+
+/* ****************    CLASSES DE COULEURS  ******************* */
+
+
+.or {
+    background-color: #f7e6a3!important;
+}
+
+.orfont {
+    color :  #f7e6a3;
+}
+
+.kamel {
+    color : #CD853F;
+}
+
+.kakicolor {
+    background-color: #BDB76B;
+}
+
+.fontwhite {
+    color : white;
+}
+
+.orborder {
+    border : 3px solid #f7e6a3;
+}
+
+.chambreClassic h1, .chambreClassic h2, .chambreClassic h3, .chambreClassic .icones i, .chambreClassic .icones {
+    color : #40202d;
+}
+
+.chambreConfort h1, .chambreConfort h2, .chambreConfort h3, .chambreConfort .icones i, .chambreConfort .icones {
+    color : #772731;
+}
+
+.chambreLuxe h1, .chambreLuxe h2, .chambreLuxe h3, .chambreLuxe .icones i, .chambreLuxe .icones {
+    color :#e47020;
+}
+
+.laSuite h1, .laSuite h2, .laSuite h3, .laSuite .icones i, .laSuite .icones {
+    color : #db0000;
+}
+
+/*  *********** Icones <i> ********** */
+.icones {
+    color : #CD853F	;
+
+}
+
+.liensleft button {
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+
+.liensleft i {
+    font-size : 1.3em;
+    /* padding-right: 1em; */
+}
+
+
 /*  ********** MAIN ************ */
+
+h1 {
+    text-transform: uppercase;
+    color : #CD853F	;
+}
+
+h2,h3 {
+    color : #CD853F	;
+}
+
+main {
+    background: linear-gradient(#eec66c, white ,#f7e6a3 );
+
+}
+
+i.orcolor {
+    color : #f7e6a3;
+}
+
+.mauto {
+    margin : 0 auto;
+} 
 
 article img {
     max-width: 90%;
 }
 
+button.dark{
+    background: black;
+    color:  #f7e6a3!important;
+}
 
+section.articleacceuil.presentation {
+    margin : 0 auto;
+}
+
+.articlesaccueil:after {
+        content: " ";
+        display:block;
+        background-color: black;
+        height: 0.2em;
+        width: 60%;
+        margin : 0 auto;
+}
+
+article.presentation:after {
+    content: " ";
+    display:block;
+    background-color: black;
+    height: 0.2em;
+    width: 60%;
+    margin : 0 auto;
+}
+
+.articlesaccueil h3 {
+    color : #f7e6a3;
+}
+
+
+/*     *************    img     ************** */
+
+article img {
+    border-radius: 10px;
+    width: 90%;
+    border : 4px solid #f7e6a3;
+} 
+
+/*  ************ page spa  ************** */
+.video {
+    
+    max-height: 150px!important;
+  }
+
+section.soin {
+    border : 3px solid  #f7e6a3;
+    border-radius : 20px;
+    height: 30% ;
+    background: linear-gradient(#f7e6a3, white, #f7e6a3);
+
+   
+}           
+
+.presentationsoin {
+    margin-top : 3em!important;
+}
+
+
+
+
+.photospa {
+  background-color: #fff;
+  color: #444;
+  display: inline-block;
+  font-size: 24px;
+  margin: 8px;
+ 
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.photospa * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.photospa:after {
+  background-color: black;
+  height: 150%;
+  bottom: -145%;
+  content: '';
+  left: 0;
+  right: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.photospa img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.photospa figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.photospa span{
+  font-size: 0.5em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.photospa h3 {
+  display: block;
+  font-weight: 700;
+}
+
+.photospa a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.photospa:hover > img,
+.photospa.hover > img {
+  opacity: 0.1;
+}
+
+.photospa:hover:after,
+.photospa.hover:after {
+  bottom: 95%;
+}
+
+.photospa:hover figcaption,
+.photospa.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+
+
+/*  **************   page chambre  ****************** */
+
+.chambrespresentation div:nth-child(2):before {
+    content: " ";
+    display:block;
+    background-color: black;
+    height: 0.2em;
+    width: 60%;
+    margin : 0 auto;
+  
+}
+
+.pres {
+    font-size: 1.2em;
+}
+
+.pres::before{
+    content:'';
+    display: inline-block;
+    background-color:#CD853F;
+    width: 10%;
+    height: 0.2em;
+    margin-right: 1.5em;
+}
+
+span.prix {
+    color : #CD853F;
+    border-top : 2px solid #CD853F;
+    border-bottom: 2px solid #CD853F;
+    padding-top : 0.5em;
+    padding-bottom : 0.5em;
+}
+
+
+/*  ************ page spa  ************** */
+
+section.soin {
+    border : 3px solid  #f7e6a3;
+    border-radius : 20px;
+    height: 30% ;
+    background: linear-gradient(#f7e6a3, white, #f7e6a3);
+
+   
+}
+
+.presentationsoin {
+    margin-top : 3em!important;
+}
+
+/*  ************** PAGE ACCES  ************ */
+
+.indicAcces i {
+    font-size: 1.5em;
+    margin-right : 1em;
+    color :  #CD853F;
+}
+
+/* ********* PAGE AVIS ************ */
+
+div.avisdiv {
+    margin-top : 3em;
+}
+
+/*  ********** PANIER ************* */
+
+.designationarticle img {
+    border-radius: 10px;
+    width: 100%;
+    border : 4px solid #f7e6a3;
+}
+
+div.designationarticle {
+    margin : 0 auto;
+    
+}
+
+div.total {
+    border-top : 2px solid #CD853F;
+}
+
+/*  ********** RESTAURANT  ************ */
+
+.articlesaccueilrestaurant:after {
+    content: " ";
+    display:block;
+    background-color: black;
+    height: 0.2em;
+    width: 60%;
+    margin : 0 auto;
+}
+
+article.menurestaurant1:after {
+content: " ";
+display:block;
+background-color: black;
+height: 0.2em;
+width: 60%;
+margin : 0 auto;
+}
+
+.articlesaccueil h3 {
+color : #f7e6a3;
+}
+
+.restaurantgras {
+font-weight: bold;
+}
+
+.restaurantpuce {
+list-style-type: none;
+}
+
+ul.restaurantpuce2 {
+display : inline-block;
+margin :auto;
+text-align:left;
+list-style-type: none;
+}
+
+.carte3 {
+color: rgb(126, 123, 123);
+font-size: 1.10rem;
+font-style: italic!important;
+}
+
+/* ************  PRESSE  ************* */
+
+.pressesection img {
+    width: 15em;
+}
+
+.pressesection a {
+    color : #f7e6a3;
+    text-decoration: none;
+}
+
+.pressesection p {
+    color : black;
+}
+
+/* Classes pour js */
+
+.none {
+    display : none!important;
+}
+
+.block {
+    display : block!important;
+}
 
 
 /* *************** FOOTER ************** */
 
 .footer a {
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #f7e6a3;
     text-decoration : none;
 }
@@ -46,6 +509,12 @@ article img {
 footer {
     color : #f7e6a3;
     font-size: 0.8em;
-    max-width : 100%!important;
+    max-width: 100%!important;
 }
+
+footer img{
+  
+    max-width: 10%;
+ 
+ }
 
