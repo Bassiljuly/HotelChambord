@@ -62,18 +62,14 @@ nav img {
     bottom:initial
     }
 
-/*  *************  PAGE CONTACT **************  */
+/*  *************  PAGE CONTACT ET RECRUTEMENT  **************  */
 
-.contact .formcontact {
+.contact .formcontact, .formrecrutement {
+
     text-align : center;
     border : 3px solid  #f7e6a3;
-    padding : 5em;
     border-radius : 20px;
     background: linear-gradient(#f7e6a3, white, #f7e6a3);
-}
-
-.formcontact input, .formcontact select {
-    border-radius : 20px;
 }
 
 /*   ****************   LIEN FIXE GAUCHE  ************* */
@@ -404,6 +400,16 @@ section.soin {
     color :  #CD853F;
 }
 
+/* PAGE EVENEMENTS */
+
+.evenmentpuce2 {
+    list-style-type: none;
+}
+
+.evenmentpuce2>span.gras {
+    font-weight: bold;
+}
+
 /* ********* PAGE AVIS ************ */
 
 div.avisdiv {
@@ -497,6 +503,13 @@ font-style: italic!important;
     display : block!important;
 }
 
+
+/* *********** page reservation ************* */
+
+.resac button a {
+    text-decoration: none;
+    color: #f7e6a3;
+}
 
 /* *************** FOOTER ************** */
 
