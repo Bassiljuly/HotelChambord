@@ -100,17 +100,25 @@ $(`.btnpanier`).click(function(event){
 /* ********************************************************************************* */
 // page avis 
 
-let select = $(`.selecttype`);
 
-// if(select.val(`chambres`))
-// {
-//   $(`.avisgeneral`).addClass(`none`);
-//   $(`.avischambre`).addClass(`block`);
-// }
+// $(`.btnavis`).on(`click`, function() {
+  
+//   let select = $(`.selecttype`);
+
+  
+//   if(select==`chambres`)
+//   {
+//     $(`.avisgeneral`).addClass(`none`);
+//     $(`.avischambre`).addClass(`block`);
+//   }
+// })
 
 // if(select==`chambres`)
 // $(`.avisgeneral`).addClass('block');
 
+$(`.avisSend`).on(`click`, function() {
+  console.log('hello toi');
+})
 
 
 

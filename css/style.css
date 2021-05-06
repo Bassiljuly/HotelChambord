@@ -478,18 +478,18 @@ font-size: 1.10rem;
 font-style: italic!important;
 }
 
-/* ************  PRESSE  ************* */
+/* ************  PRESSE  ET  ACTUALITES ************* */
 
 .pressesection img {
     width: 15em;
 }
 
-.pressesection a {
+.pressesection a , .actusection a{
     color : #f7e6a3;
     text-decoration: none;
 }
 
-.pressesection p {
+.pressesection p, .actusection p{
     color : black;
 }
 
@@ -501,6 +501,12 @@ font-style: italic!important;
 
 .block {
     display : block!important;
+}
+
+/* ****** ACTUALITES ********* */
+
+.actusection  img {
+    width: 8em;
 }
 
 

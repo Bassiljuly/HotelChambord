@@ -1,159 +1,262 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Hotel Chambord</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Hotel Chambord</title>
 </head>
+
 <body class="mt-4 mt-lg-0">
-    <header>
-      <!-- NAVIGATION -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../img/logoChambrodbeige.gif" alt="logo-CHambord"></a>
-              <button class="navbar-toggler or" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="chambres.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Chambres
-                    </a>
-                    <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item dark" href="chambres.html">Les chambres</a></li>  
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item dark" href="chambreClassic.html">Classic</a></li>
-                      <li><a class="dropdown-item dark" href="chambreConfort.html">Confort</a></li>
-                      <li><a class="dropdown-item dark" href="chambreLuxe.html">Deluxe</a></li>
-                      <li><a class="dropdown-item dark" href="suite.html">Suite</a></li>
-                    </ul>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="restaurant.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Restaurant
-                        </a>
-                        <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item dark" href="restaurant.html#brasserie">Carte brasserie</a></li>
-                          <li><a class="dropdown-item dark" href="restaurant.html#degustation">Carte degustation</a></li>
-                          <li><a class="dropdown-item dark" href="restaurant.html#resto">Carte restaurant</a></li>
-                        </ul>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="spa.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Spa
-                        </a>
-                        <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item dark" href="spa.html">Le spa</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item dark" href="spa.html#soindetente">Soin détente</a></li>
-                          <li><a class="dropdown-item dark" href="spa.html#soindecouverte">Soin découverte</a></li>
-                          <li><a class="dropdown-item dark" href="spa.html#soinrelaxant">Soin relaxant</a></li>
-                          <li><a class="dropdown-item dark" href="spa.html#soinplaisir">Soin plaisir</a></li>
-                          <li><a class="dropdown-item dark" href="spa.html#soinevasion">Soin évasion</a></li>
-                        </ul>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="html/chambres.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          L'hôtel
-                          </a>
-                          <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item dark" href="quiSommesNous.html">Qui sommes nous?</a></li>
-                            <li><a class="dropdown-item dark" href="actualites.html">Actualités</a></li>
-                            <li><a class="dropdown-item dark" href="evenements.html">Evènements</a></li>
-                            <li><a class="dropdown-item dark" href="acces.html">Accès</a></li>
-                            <li><a class="dropdown-item dark" href="contact.html">Contact</a></li>
-                          </ul>
-                  <li class="nav-item btn btnresanav ms-9">
-                    <a class="nav-link" href="reservation.html">Reservation</a>
-                  </li>
-                  <li class="nav-item ms-7">
-                    <a class="nav-link panier" href="panier.html"><i class="fas fa-cart-arrow-down"></i></a>
-                  </li>
-                  <li class="nav-item dropdown ms-3">
-                    <a class="nav-link dropdown-toggle" href="chambres.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    FR
-                    </a>
-                    <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item dark" href="#">FR</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item dark" href="#">EN</a></li>
-                    </ul>
+  <header>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logoChambrodbeige.gif" alt="logo-CHambord"></a>
+        <button class="navbar-toggler or" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="chambres.html" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Chambres
+              </a>
+              <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dark" href="chambres.html">Les chambres</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2 or" type="search" placeholder="Rechercher" aria-label="Search"  required>
-                  <button class="btn orborder" type="submit">Recherche</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main class="pb-3">
-      <!-- ************* lien fixed gauche ****************** -->
-      <div class="container contour liensleft">
-        <div class="row">
-          <div class="col-1 d-none d-lg-block">
-            <button><i class="fas fa-print bg-dark"></i></button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1">
-            <button><i class="fas fa-share-alt bg-dark share"></i></button>
-          </div>
-          <div class="col-1 none reseaux">
-            <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
-            <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
-          </div>
-        </div>
-      </div>
-      <!-- ***************** Contenu principal  ***************** -->  
-
-
-
-
- 
-    <!-- *************** Inscription NewsLetter **************-->
-    <div class="container w-lg-50 w-75 border mt-5 border-secondary border-2">
-        <div class="row justify-content-center text-center">
-          <h3> NewsLetter</h3>
-          <form action="script.js" class="col-6 newsletter">
-            <label for="exampleInputEmail1" class="form-label">Inscription à notre NewsLetter</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-            <button type="submit " class="btn mt-2 mb-2 dark">S'abonner</button>
+                <li><a class="dropdown-item dark" href="chambreClassic.html">Classic</a></li>
+                <li><a class="dropdown-item dark" href="chambreConfort.html">Confort</a></li>
+                <li><a class="dropdown-item dark" href="chambreLuxe.html">Deluxe</a></li>
+                <li><a class="dropdown-item dark" href="suite.html">Suite</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="restaurant.html" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Restaurant
+              </a>
+              <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dark" href="restaurant.html#brasserie">Carte brasserie</a></li>
+                <li><a class="dropdown-item dark" href="restaurant.html#degustation">Carte degustation</a></li>
+                <li><a class="dropdown-item dark" href="restaurant.html#resto">Carte restaurant</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="spa.html" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Spa
+              </a>
+              <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dark" href="spa.html">Le spa</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item dark" href="spa.html#soindetente">Soin détente</a></li>
+                <li><a class="dropdown-item dark" href="spa.html#soindecouverte">Soin découverte</a></li>
+                <li><a class="dropdown-item dark" href="spa.html#soinrelaxant">Soin relaxant</a></li>
+                <li><a class="dropdown-item dark" href="spa.html#soinplaisir">Soin plaisir</a></li>
+                <li><a class="dropdown-item dark" href="spa.html#soinevasion">Soin évasion</a></li>
+              </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="html/chambres.html" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                L'hôtel
+              </a>
+              <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dark" href="quiSommesNous.html">Qui sommes nous?</a></li>
+                <li><a class="dropdown-item dark" href="actualites.html">Actualités</a></li>
+                <li><a class="dropdown-item dark" href="evenements.html">Evènements</a></li>
+                <li><a class="dropdown-item dark" href="acces.html">Accès</a></li>
+                <li><a class="dropdown-item dark" href="contact.html">Contact</a></li>
+              </ul>
+            <li class="nav-item btn btnresanav ms-9">
+              <a class="nav-link" href="reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item ms-7">
+              <a class="nav-link panier" href="panier.html"><i class="fas fa-cart-arrow-down"></i></a>
+            </li>
+            <li class="nav-item dropdown ms-3">
+              <a class="nav-link dropdown-toggle" href="chambres.html" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                FR
+              </a>
+              <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dark" href="#">FR</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item dark" href="#">EN</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 or" type="search" placeholder="Rechercher" aria-label="Search" required>
+            <button class="btn orborder" type="submit">Recherche</button>
           </form>
         </div>
       </div>
-    </main>
- <!-- *************  FOOTER ************ -->
-<!--  Liens -->
-<<footer class="container contour footer bg-dark m-0">
-  <div class="row justify-content-center text-center pt-3">
-    <div class="col-sm-6 col-lg-3 px-0"><a href="avis.html">Avis</a></div>
-    <div class="col-sm-6 col-lg-2 px-0"><a href="presse.html">Presse</a></div>
-    <div class="col-sm-6 col-lg-2 px-0"><a href="recrutement.html">Recrutement</a></div>
-    <div class="col-sm-6 col-lg-2 px-0"><a href="mentionsLegales.html">Mentions légales</a></div>
-    <div class="col-sm-6 col-lg-2 px-0"><a href="conditionsGeneralesVente.html">Condititions générales de vente</a></div>
-  </div>
-  <div class="row mt-3 justify-content-center text-center">
-    <div class="col-6"><img src="../img/logoChambrodbeige.gif">
-      <p> Hôtel Chambord - 1 avenue Montaigne 75008 PARIS</p>
+    </nav>
+  </header>
+  <main class="pb-3">
+    <!-- ************* lien fixed gauche ****************** -->
+    <div class="container contour liensleft">
+      <div class="row">
+        <div class="col-1 d-none d-lg-block">
+          <button><i class="fas fa-print bg-dark" OnClick="javascript:window.print()"></i></button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <button><i class="fas fa-share-alt bg-dark share"></i></button>
+        </div>
+        <div class="col-1 none reseaux">
+          <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
+          <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <p class="col-12 text-center mb-0 mt-1"> © 2021 - Site non commercial réalisé dans le cadre d'un examen</p>
-      <p class="col-12 text-center m-0">Réalisé par : Marie VIDAL & Julie BASSIL</p>
+    <!-- ***************** Contenu principal  ***************** -->
+    <h1 class="pt-5 text-center">Toute l'actualité</h1>
+    <section class="contour container fontwhite mt-5 actusection">
+      <div class="row mt-5 mb-5 justify-content-center text-center">
+        <div class="col-sm-11 bg-light col-lg-5 rounded-3 orborder">
+          <img src="../img/actualité1.jfif" alt="actualité hotellerie" class="mb-2 mt-2">
+          <h2>Le Monde </h2>
+          <p>-Publié aujourd’hui à 09h41, mis à jour à 12h45-</p>
+          <p class="gras">"Covid-19 : craignant une nouvelle vague estivale, l’hôtellerie-restauration réclame une
+            vaccination prioritair"</p>
+          <P>Les professionnels s’apprêtent à vivre un été aussi animé que complexe, avec une circulation du virus
+            élevée. Ils incitent leurs employés à se faire vacciner dès qu’ils en auront la possibilité.</P>
+          <p><button class="btn mt-2 mb-2 dark"><a
+                href="https://www.lemonde.fr/economie/article/2021/05/05/covid-19-face-a-la-peur-d-une-nouvelle-vague-estivale-l-hotellerie-restauration-reclame-une-vaccination-prioritaire_6079175_3234.html"
+                target="_blank">Voir la suite ...</a></button></p>
+        </div>
+        <div class="col-sm-11 bg-light col-lg-5 ms-2 rounded-3 orborder">
+          <img src="../img/actualité2.jfif" alt="actualité hotellerie" class="mb-2 mt-2">
+          <h2>Ouest France</h2>
+          <p>-Publié Publié le 05/05/2021 à 09h15 -</p>
+          <p class="gras">"Nantes. Restauration et hôtellerie : une journée de job dating au MIN"</p>
+          <P>Les professionnels de la restauration et de l’hôtellerie donnent rendez-vous à aux candidats à l’embauche
+            le 10 mai au Marché d’intérêt national , à Rezé.</P>
+          <p><button class="btn mt-2 mb-2 dark"><a
+                href="https://www.ouest-france.fr/pays-de-la-loire/nantes-44000/nantes-restauration-et-hotellerie-une-journee-de-job-dating-au-min-8dc11b9a-acc0-11eb-b363-21bfe472a6ff"
+                target="_blank">Voir la suite ...</a></button></p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center text-center">
+        <div class="col-sm-11 bg-light col-lg-5 rounded-3 orborder">
+          <img src="../img/actualité3.jfif" alt="actualité hotellerie" class="mb-2 mt-2">
+          <h2>Le Moniteur</h2>
+          <p>-Publié le 05/05/2021-</p>
+          <p class="gras">"Strasbourg : Turenne Hôtellerie va rénover Le Pax"</p>
+          <P>Turenne Hôtellerie a pour projet de transformer Le Pax en un véritable lieu de vie.</P>
+          <p><button class="btn mt-2 mb-2 dark"><a
+                href="https://www.lemoniteur.fr/article/strasbourg-turenne-hotellerie-va-renover-le-pax.2143414"
+                target="_blank">Voir la suite ...</a></button></p>
+        </div>
+        <div class="col-sm-11 bg-light col-lg-5 ms-2 rounded-3 orborder">
+          <img src="../img/actualité4.jfif" alt="actualité hotellerie" class="mb-2 mt-2">
+          <h2>Le Républicain de l'Est</h2>
+          <p>-Publié Aujourd'hui à 07:00 | mis à jour aujourd'hui à 17:38 -</p>
+          <p class="gras">"Le secteur de l'hôtellerie sort la tête de l'eau"</p>
+          <P>Hôtels, gîtes et chambres d’hôtes ont à nouveau le bonheur d’entendre sonner le téléphone depuis la fin de
+            la limitation des déplacements. Dans le Pays de Bitche, les patrons de structures retrouvent peu à peu le
+            sourire.</P>
+          <p><button class="btn mt-2 mb-2 dark"><a
+                href="https://www.republicain-lorrain.fr/economie/2021/05/05/les-telephones-sonnent-a-nouveau-chez-les-hoteliers"
+                target="_blank">Voir la suite ...</a></button></p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center text-center ">
+        <div class="col-sm-11 bg-light col-lg-5 rounded-3 orborder">
+          <img src="../img/actualité5.jfif" alt="actualité hotellerie" class="mb-2 mt-2">
+          <h2>Le journal de Saône et Loire</h2>
+          <p>-Publié Hier à 20:25 | mis à jour hier à 21:00-</p>
+          <p class="gras">"L’hôtellerie-restauration, un secteur d’avenir qui recrute"</p>
+          <P>Une table ronde sur les métiers de l’hôtellerie-restauration était organisée hier en partenariat avec le
+            Pays Charolais-Brionnais, Pôle emploi et la Mission locale. L’occasion pour les jeunes présents de constater
+            que le travail dans ce secteur ne manque pas.</P>
+          <p><button class="btn mt-2 mb-2 dark"><a
+                href="https://www.lejsl.com/economie/2021/05/04/l-hotellerie-restauration-un-secteur-d-avenir-qui-recrute"
+                target="_blank">Voir la suite ...</a></button></p>
+        </div>
+        <div class="col-sm-11 bg-light col-lg-5 ms-2 rounded-3 orborder">
+          <img src="../img/actualité6.jfif" alt="actualité hotellerie" class="mb-2 mt-2">
+          <h2>Europ 1</h2>
+          <p>-Publié 20h36, le 02 mai 2021-</p>
+          <p class="gras">"Covid : les professionnels de l'hôtellerie-restauration veulent un maintien des aides"</p>
+          <P>Les professionnels du secteur doivent être reçus lundi par la ministre du Travail Elisabeth Borne et le
+            ministre de l'Economie Bruno Le Maire. Ils réclament notamment le maintien du chômage partiel jusqu'au mois
+            de décembre. "Il ne faut pas que les aides s'arrêtent trop vite", prévient sur Europe 1 Roland Héguy,
+            président de l'Union des métiers et des industries de l'hôtellerie. </P>
+          <p><button class="btn mt-2 mb-2 dark"><a
+                href="https://www.europe1.fr/economie/covid-les-professionnels-de-lhotellerie-restauration-veulent-un-maintien-des-aides-4042433"
+                target="_blank">Voir la suite ...</a></button></p>
+        </div>
+        <div>
+          <div>
+            <nav aria-label="numero de page">
+              <ul class="pagination pagination-lg">
+                <li class="page-item disabled">
+                  <a class="page-link" href="../html/actualites.html" tabindex="-1">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="../html/actualites2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="../html/actualites3.html">3</a></li>
+              </ul>
+            </nav>
+          </div>
+    </section>
+    <!-- *************** Inscription NewsLetter **************-->
+    <div class="container w-lg-50 w-75 border mt-5 border-secondary border-2">
+      <div class="row justify-content-center text-center">
+        <h3> NewsLetter</h3>
+        <form action="script.js" class="col-6 newsletter">
+          <label for="exampleInputEmail1" class="form-label">Inscription à notre NewsLetter</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <button type="submit " class="btn mt-2 mb-2 dark">S'abonner</button>
+        </form>
+      </div>
     </div>
-</footer>
-  <!-- Appel fontawesome -->
-  <script src="https://kit.fontawesome.com/abf72c1229.js" crossorigin="anonymous"></script>
-  <!-- Appel jquery via cdn gogle a mettre avant le script perso -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
-  <!-- Appel du script -->
-  <script src="../js/script.js"></script>
-  </body>
-  </html>
+  </main>
+  <!-- *************  FOOTER ************ -->
+  <!--  Liens -->
+  <footer class="container contour footer bg-dark m-0">
+    <div class="row justify-content-center text-center pt-3">
+      <div class="col-sm-6 col-lg-3 px-0"><a href="avis.html">Avis</a></div>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="presse.html">Presse</a></div>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="recrutement.html">Recrutement</a></div>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="mentionsLegales.html">Mentions légales</a></div>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="conditionsGeneralesVente.html">Condititions générales de vente</a>
+      </div>
+    </div>
+    <div class="row mt-3 justify-content-center text-center">
+      <div class="col-6"><img src="../img/logoChambrodbeige.gif">
+        <p> Hôtel Chambord - 1 avenue Montaigne 75008 PARIS</p>
+      </div>
+      <div class="row">
+        <p class="col-12 text-center mb-0 mt-1"> © 2021 - Site non commercial réalisé dans le cadre d'un examen</p>
+        <p class="col-12 text-center m-0">Réalisé par : Marie VIDAL & Julie BASSIL</p>
+      </div>
+      </footer>
+      <!-- Appel fontawesome -->
+      <script src="https://kit.fontawesome.com/abf72c1229.js" crossorigin="anonymous"></script>
+      <!-- Appel jquery via cdn gogle a mettre avant le script perso -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+      <!-- Appel du script -->
+      <script src="../js/script.js"></script>
+</body>
+
+</html>
