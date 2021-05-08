@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reservez votre nuit inoubloiable au sein du palace de demain. L’Hôtel Chambord n’est pas un palace ordinaire. Ici, sur la prestigieuse avenue Montaigne, adresse de la Haute Couture française, notre hôtel vous offre avec fierté le meilleur de Paris.">
   <link href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Playfair+Display&display=swap"
@@ -15,7 +16,7 @@
   <title>Hotel Chambord</title>
 </head>
 
-<body class="mt-4 mt-lg-0">
+<body>
   <header>
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
@@ -52,6 +53,10 @@
                 Restaurant
               </a>
               <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dark" href="restaurant.html">Le restaurant</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item dark" href="restaurant.html#brasserie">Carte brasserie</a></li>
                 <li><a class="dropdown-item dark" href="restaurant.html#degustation">Carte degustation</a></li>
                 <li><a class="dropdown-item dark" href="restaurant.html#resto">Carte restaurant</a></li>
@@ -117,14 +122,14 @@
     <div class="container contour liensleft">
       <div class="row">
         <div class="col-1 d-none d-lg-block">
-          <button><i class="fas fa-print bg-dark"OnClick="javascript:window.print()"></i></button>
+          <button><i class="fas fa-print bg-dark" OnClick="javascript:window.print()"></i></button>
         </div>
       </div>
       <div class="row">
-        <div class="col-1">
+        <div class="col-2 col-lg-1">
           <button><i class="fas fa-share-alt bg-dark share"></i></button>
         </div>
-        <div class="col-1 none reseaux">
+        <div class="col-5 col-lg-1 none reseaux">
           <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
           <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
         </div>
@@ -134,7 +139,7 @@
     <h1 class="text-center">Réservez dès maintenant</h1>
     <section class="container contour resa bg-secondary w-75 w-lg-50 rounded-pill orfont">
       <div class="row justify-content-center mt-5">
-        <div class="col-10 col-lg-4 text-center">
+        <div class="col-10 col-md-8 col-lg-4 text-center">
           <form action="" methode="POST" id="formresa">
             <label for="selectTypeChambre" class="mt-5 mb-2">Type de chambre</label>
             <select class="form-select" aria-label="Default select example" id="selectTypeChambre">
@@ -167,11 +172,11 @@
         </div>
       </div>
       <div class="row justify-content-center mt-3 text-center">
-        <div class="col-10 col-lg-4">
+        <div class="col-10 col-md-8 col-lg-4 pt-md-3">
           <label for="datepicker">Date d'arrivée</label>
           <input type="text" id="dt1">
         </div>
-        <div class="col-10 col-lg-4">
+        <div class="col-10 col-md-8 pt-md-3 col-lg-4">
           <label for="datepicker">Date de départ</label>
           <input type="text" id="dt2">
         </div>
@@ -193,9 +198,10 @@
       </div>
       </form>
     </section>
-    <div class="row text-center kamel mt-5 resac">
-      <div class="col">
-        <p>Pour la réservation et toute information concernant notre Spa et notre Restaurant  rendez-vous sur la page contact</p>
+    <div class="row text-center kamel mt-5 resac justify-content-center">
+      <div class="col-10 col-md-8 ">
+        <p>Pour la réservation et toute information concernant notre Spa et notre Restaurant rendez-vous sur la page
+          contact</p>
         <p><button class="btn mt-2 mb-2 dark orfont"><a href="contact.html">Contact</a></button></p>
       </div>
     </div>
@@ -241,6 +247,6 @@
   <script src="../js/jquery-ui.min.js"></script>
   <!-- Appel du script -->
   <script src="../js/script.js"></script>
+  <script src="../js/datepicker.js"></script>
 </body>
-
 </html>

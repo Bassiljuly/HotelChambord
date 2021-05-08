@@ -12,7 +12,7 @@
   <title>Hotel Chambord</title>
 </head>
 
-<body class="mt-4 mt-lg-0">
+<body>
   <header>
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
@@ -49,6 +49,10 @@
                 Restaurant
               </a>
               <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dark" href="restaurant.html">Le restaurant</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item dark" href="restaurant.html#brasserie">Carte brasserie</a></li>
                 <li><a class="dropdown-item dark" href="restaurant.html#degustation">Carte degustation</a></li>
                 <li><a class="dropdown-item dark" href="restaurant.html#resto">Carte restaurant</a></li>
@@ -114,14 +118,14 @@
     <div class="container contour liensleft">
       <div class="row">
         <div class="col-1 d-none d-lg-block">
-          <button><i class="fas fa-print bg-dark"OnClick="javascript:window.print()"></i></button>
+          <button><i class="fas fa-print bg-dark" OnClick="javascript:window.print()"></i></button>
         </div>
       </div>
       <div class="row">
-        <div class="col-1">
+        <div class="col-2 col-lg-1">
           <button><i class="fas fa-share-alt bg-dark share"></i></button>
         </div>
-        <div class="col-1 none reseaux">
+        <div class="col-5 col-lg-1 none reseaux">
           <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
           <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
         </div>
@@ -162,30 +166,31 @@
         </div>
         <div class="mb-3 w-75 mauto">
           <label for="exampleInputEmail1" class="form-label">Email<span style="color:red"> *</span></label>
-          <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp"
-            required>
+          <input type="email" class="form-control rounded-pill" name="exampleInputEmail1" id="exampleInputEmail1"
+            aria-describedby="emailHelp" required>
         </div>
         <div class="mb-3 w-75 mauto">
           <label for="entreprise" class="form-label">Entreprise</label>
           <input type="text" class="form-control rounded-pill" id="entreprise" name="entreprise">
         </div>
         <div class="mb-3 w-75 mauto">
-          <label class="control-label">Téléphone : <span style="color:red"> *</span></label>
+          <label class="control-label" for="telephone">Téléphone : <span style="color:red"> *</span></label>
           <input type="tel" class="form-control rounded-pill" name="telephone" />
         </div>
         <div class="mb-3 w-75 mauto">
-          <label class="control-label">Joindre votre lettre de motivation : </label>
-          <input type="file" class="form-control rounded-pill" name="fichier" />
+          <label class="control-label" for="fichier1">Joindre votre lettre de motivation : </label>
+          <input type="file" class="form-control rounded-pill" name="fichier1" />
         </div>
         <div class="mb-3 w-75 mauto">
-          <label class="control-label">Joindre votre curriculum-vitae : <span style="color:red"> *</span></label>
-          <input type="file" class="form-control rounded-pill" name="fichier" required />
+          <label class="control-label" for="fichier2">Joindre votre curriculum-vitae : <span style="color:red">
+              *</span></label>
+          <input type="file" class="form-control rounded-pill" name="fichier2" required />
         </div>
         <div class="mb-3 w-75  mt-5 mauto">
           <div class="form-floating">
-            <label lass="control-label" for="floatingTextarea">Ecrivez votre message</label>
-            <textarea class="form-control rounded-pill" placeholder="Leave a comment here"
-              id="floatingTextarea"></textarea>
+            <label class="control-label pt-1" for="floatingTextarea">Ecrivez votre message...</label>
+            <textarea class="form-control rounded-pill pt-4" placeholder="Laissez une commentaire ici"
+              id="floatingTextarea" name="floatingTextarea"></textarea>
           </div>
         </div>
         <button type="submit" class="orfont mt-3 btn btn-dark mb-5 btnrecrut">Envoyer</button>
@@ -237,5 +242,4 @@
   <!-- Appel du script -->
   <script src="../js/script.js"></script>
 </body>
-
 </html>

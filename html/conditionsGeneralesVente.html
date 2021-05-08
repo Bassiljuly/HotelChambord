@@ -12,7 +12,7 @@
   <title>Hotel Chambord</title>
 </head>
 
-<body class="mt-4 mt-lg-0">
+<body>
   <header>
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
@@ -49,6 +49,10 @@
                 Restaurant
               </a>
               <ul class="dropdown-menu or" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item dark" href="restaurant.html">Le restaurant</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item dark" href="restaurant.html#brasserie">Carte brasserie</a></li>
                 <li><a class="dropdown-item dark" href="restaurant.html#degustation">Carte degustation</a></li>
                 <li><a class="dropdown-item dark" href="restaurant.html#resto">Carte restaurant</a></li>
@@ -114,14 +118,14 @@
     <div class="container contour liensleft">
       <div class="row">
         <div class="col-1 d-none d-lg-block">
-          <button><i class="fas fa-print bg-dark"OnClick="javascript:window.print()"></i></button>
+          <button><i class="fas fa-print bg-dark" OnClick="javascript:window.print()"></i></button>
         </div>
       </div>
       <div class="row">
-        <div class="col-1">
+        <div class="col-2 col-lg-1">
           <button><i class="fas fa-share-alt bg-dark share"></i></button>
         </div>
-        <div class="col-1 none reseaux">
+        <div class="col-5 col-lg-1 none reseaux">
           <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
           <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
         </div>
@@ -195,5 +199,4 @@
   <!-- Appel du script -->
   <script src="../js/script.js"></script>
 </body>
-
 </html>

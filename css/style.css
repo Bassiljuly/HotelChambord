@@ -2,8 +2,6 @@
 body {
     height : 100%;
     width: 100%!important;
-    position : absolute;
-    top : 18%;
     font-family: 'Playfair Display', serif;
 }
 
@@ -38,6 +36,14 @@ nav img {
 .btnresanav a {
     color :black!important;
 }
+
+/* EFFETS sur liens */
+
+a:hover {
+    color : #808000!important;
+}
+
+
 /* ajout d'une classe margin-left 9em et 7em pour la nav */
 .ms-9 {
  margin-left : 9em!important;
@@ -223,7 +229,13 @@ article img {
     border-radius: 10px;
     width: 90%;
     border : 4px solid #f7e6a3;
-} 
+    transition:transform 0.25s ease;
+}
+
+article img:hover {
+    -webkit-transform:scale(1.1); /* or some other value */
+    transform:scale(1.1);
+}
 
 /*  ************ page spa  ************** */
 .video {
@@ -536,4 +548,28 @@ footer img{
     max-width: 10%;
  
  }
+
+ /* *******************  */
+/* media query pour la hauteur du body sous la nav */
+@media screen and (min-width: 990px) {
+    body {
+        margin-top :27px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        position : absolute;
+        top : 120px;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px)  {
+    body {
+        position : absolute;
+        top : 18%;
+    }
+}
+
+
 
