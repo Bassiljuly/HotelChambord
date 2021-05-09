@@ -116,17 +116,17 @@
   </header>
   <main class="pb-3">
     <!-- ************* lien fixed gauche ****************** -->
-    <div class="container contour liensleft">
-      <div class="row">
+    <div class="container contour liensleft w-25">
+      <div class="row w-25">
         <div class="col-1 d-none d-lg-block">
           <button><i class="fas fa-print bg-dark" OnClick="javascript:window.print()"></i></button>
         </div>
       </div>
-      <div class="row">
+      <div class="row w-50">
         <div class="col-2 col-lg-1">
           <button><i class="fas fa-share-alt bg-dark share"></i></button>
         </div>
-        <div class="col-5 col-lg-1 none reseaux">
+        <div class="col-2 col-lg-1 none reseaux ms-5">
           <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
           <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
         </div>
@@ -140,10 +140,10 @@
       <div class="row justify-content-center mauto text-center">
         <form class="col-lg-6 col-sm-11 mb-5 formChoixAvis">
           <select class="form-select selecttype" aria-label="Default select example">
-            <option value="general" selected>Général</option>
-            <option value="chambres">Chambres</option>
-            <option value="2">Restaurant</option>
-            <option value="3">Soins</option>
+            <option value="generalA" selected>Général</option>
+            <option value="chambresA">Chambres</option>
+            <option value="restaurantA">Restaurant</option>
+            <option value="soinsA">Soins</option>
           </select>
           <button type="submit" class="btn mt-2 mb-5 dark btnavis">Valider</button>
         </form>
@@ -194,7 +194,7 @@
       </div>
     </div>
     <!-- AVIS chambres -->
-    <div class="contour container fontwhite mt-5 avischambre none">
+    <div class="contour container fontwhite mt-5 avischambres none">
       <div class="row mt-5 mb-5 justify-content-center">
         <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
           <p class="orfont">John</p>
@@ -236,8 +236,100 @@
         </div>
       </div>
     </div>
+    <!-- AVIS restaurant -->
+    <div class="contour container fontwhite mt-5 avisrestaurant none">
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Mohamed</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star "></i><i class="fas fa-star"></i></p>
+          <p>Repas et petit dejeuner super</p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Binta</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i></p>
+          <p>Un service vraiment digne d'un palace 5 étoiles je recommande!!</p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Sophie</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+          <p>Tres bon mais peu copieux</p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Sonia</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i></p>
+          <p>Très bon repas rien a redire </p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Sofia</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i></p>
+          <p>Legerement deçu des plats</p>
+        </div>
+      </div>
+    </div>
+    <!-- AVIS soins -->
+    <div class="contour container fontwhite mt-5 avissoins none">
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Joahanna</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i class="fas fa-star"></i></p>
+          <p>Des soins geniaux! </p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Camelia</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i></p>
+          <p>Large choix de soin et très bonne qualité de service</p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Melinda</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+          <p>Hotel confort mais le le personnel n'était pas très agréable</p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Steven</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i class="fas fa-star"></i></p>
+          <p>Vraiment un service de qualite mais temps assez court</p>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 justify-content-center">
+        <div class="col-sm-11 bg-secondary col-lg-5 rounded-3">
+          <p class="orfont">Sofia</p>
+          <p class="m-0"><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i
+              class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i><i class="fas fa-star orcolor"></i></p>
+          <p>Vraiment au dela de ma esperances des soins magiques !</p>
+        </div>
+      </div>
+    </div>
     <!-- Formulaire avis -->
-    <div class="container contour">
+    <div class="row mauto none messageEnvoiC justify-content-center fs-5">
+      <div class="col-lg-6">
+        <p>Merci Mme/Mr <span class="affichMessAvis"></span> !</p>
+        <p>Votre avis a bien été envoyé</p>
+      </div>
+    </div>
+    <div class="container contour envoiAvis">
       <div class="row  justify-content-center text-center">
         <h3 class="text-center mb-5">Donnez votre avis</h3>
         <form action="../js/script.js" class="col-sm-11 col-lg-5" method="POST">
@@ -270,21 +362,23 @@
   <!--  Liens -->
   <footer class="container contour footer bg-dark m-0">
     <div class="row justify-content-center text-center pt-3">
-      <div class="col-sm-6 col-lg-3 px-0"><a href="avis.html">Avis</a></div>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="planSite.html">Plan du site</a></div>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="avis.html">Avis</a></div>
       <div class="col-sm-6 col-lg-2 px-0"><a href="presse.html">Presse</a></div>
       <div class="col-sm-6 col-lg-2 px-0"><a href="recrutement.html">Recrutement</a></div>
       <div class="col-sm-6 col-lg-2 px-0"><a href="mentionsLegales.html">Mentions légales</a></div>
-      <div class="col-sm-6 col-lg-2 px-0"><a href="conditionsGeneralesVente.html">Condititions générales de vente</a>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="conditionsGeneralesVente.html">Conditions générales de vente</a>
       </div>
     </div>
     <div class="row mt-3 justify-content-center text-center">
-      <div class="col-6"><img src="../img/logoChambrodbeige.gif">
+      <div class="col-6"><img src="../img/logoChambrodbeige.gif" alt="logo hotel Chambord">
         <p> Hôtel Chambord - 1 avenue Montaigne 75008 PARIS</p>
       </div>
       <div class="row">
         <p class="col-12 text-center mb-0 mt-1"> © 2021 - Site non commercial réalisé dans le cadre d'un examen</p>
         <p class="col-12 text-center m-0">Réalisé par : Marie VIDAL & Julie BASSIL</p>
       </div>
+    </div>
   </footer>
   <!-- Appel fontawesome -->
   <script src="https://kit.fontawesome.com/abf72c1229.js" crossorigin="anonymous"></script>
@@ -292,6 +386,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
   <!-- Appel du script -->
+  <script src="../js/avis.js"></script>
   <script src="../js/script.js"></script>
 </body>
 

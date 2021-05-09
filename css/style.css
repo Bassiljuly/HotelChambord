@@ -78,6 +78,14 @@ a:hover {
     background: linear-gradient(#f7e6a3, white, #f7e6a3);
 }
 
+.none {
+    display: none!important;
+}
+
+.block {
+    display : block!important;
+}
+
 /*   ****************   LIEN FIXE GAUCHE  ************* */
 
 .liensleft {
@@ -162,6 +170,16 @@ a:hover {
     /* padding-right: 1em; */
 }
 
+/* PAGE PLAN */
+
+.planpage a {
+    color : #CD853F;
+}
+
+.planpage ul {
+    list-style: square;
+}
+
 
 /*  ********** MAIN ************ */
 
@@ -172,6 +190,10 @@ h1 {
 
 h2,h3 {
     color : #CD853F	;
+}
+
+.gras {
+    font-weight: bold;
 }
 
 main {
@@ -505,15 +527,6 @@ font-style: italic!important;
     color : black;
 }
 
-/* Classes pour js */
-
-.none {
-    display : none!important;
-}
-
-.block {
-    display : block!important;
-}
 
 /* ****** ACTUALITES ********* */
 

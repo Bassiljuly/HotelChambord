@@ -115,17 +115,17 @@
   </header>
   <main class="pb-3">
     <!-- ************* lien fixed gauche ****************** -->
-    <div class="container contour liensleft">
-      <div class="row">
+    <div class="container contour liensleft w-25">
+      <div class="row w-25">
         <div class="col-1 d-none d-lg-block">
           <button><i class="fas fa-print bg-dark" OnClick="javascript:window.print()"></i></button>
         </div>
       </div>
-      <div class="row">
+      <div class="row w-50">
         <div class="col-2 col-lg-1">
           <button><i class="fas fa-share-alt bg-dark share"></i></button>
         </div>
-        <div class="col-5 col-lg-1 none reseaux">
+        <div class="col-2 col-lg-1 none reseaux ms-5">
           <p><a href="#"><i class="fab fa-facebook bg-dark"></i></a></p>
           <p><a href="#"><i class="fab fa-instagram bg-dark"></i></a></p>
         </div>
@@ -134,7 +134,7 @@
     <!-- ***************** Contenu principal  ***************** -->
     <h1 class="pt-5 text-center">Rejoignez-nous !</h1>
     <div class="container contour ">
-      <div clas="row mauto">
+      <div class="row mauto">
         <div class="col-11 col-lg-7 lh-lg mb-5 mt-5 text-center mauto fs-5">
           <p>A l'hôtel Chambord, notre devise est que l'on ne devient le meilleur qu'en embauchant les meilleurs. Nos
             valeurs sont incarnées par notre équipe corporative et l'ensemble du personnel employé dans notre hôtel. Si
@@ -144,8 +144,8 @@
             spontanée :</p>
         </div>
       </div>
-      <div class="row auto">
-        <h2 class="text-center">Vos coordonnées</h3>
+      <div class="row auto divnoneR">
+        <h2 class="text-center">Vos coordonnées</h2>
       </div>
       <!-- ********** Formulaire de recrutement ************** -->
       <form class="col-11 col-lg-7 mt-5 mauto justify-content-center formrecrutement">
@@ -157,12 +157,12 @@
           </select>
         </div>
         <div class="mb-3 w-75 mauto rounded-pill">
-          <label for="nom" class="control-label">Nom : <span style="color:red"> *</span></label>
-          <input type="text" class="form-control rounded-pill" id="prenom" name="nom" required>
+          <label for="nomR" class="control-label">Nom : <span style="color:red"> *</span></label>
+          <input type="text" class="form-control rounded-pill" id="nomR" name="nomR" required>
         </div>
         <div class="mb-3 w-75 mauto">
-          <label for="prenom" class="control-label">Prénom :</label>
-          <input type="text" class="form-control rounded-pill" id="prenom" name="prenom">
+          <label for="prenomR" class="control-label">Prénom :</label>
+          <input type="text" class="form-control rounded-pill" id="prenomR" name="prenomR">
         </div>
         <div class="mb-3 w-75 mauto">
           <label for="exampleInputEmail1" class="form-label">Email<span style="color:red"> *</span></label>
@@ -197,10 +197,9 @@
       </form>
     </div>
     <div class="row">
-      <div class="col-sm-11 text-center mauto">
+      <div class="col-sm-11 text-center mauto divnoneR">
         <p style="color:red;">* Champs obligtoire</p>
       </div>
-    </div>
     </div>
     <!-- *************** Inscription NewsLetter **************-->
     <div class="container w-lg-50 w-75 border mt-5 border-secondary border-2">
@@ -218,21 +217,23 @@
   <!--  Liens -->
   <footer class="container contour footer bg-dark m-0">
     <div class="row justify-content-center text-center pt-3">
-      <div class="col-sm-6 col-lg-3 px-0"><a href="avis.html">Avis</a></div>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="planSite.html">Plan du site</a></div>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="avis.html">Avis</a></div>
       <div class="col-sm-6 col-lg-2 px-0"><a href="presse.html">Presse</a></div>
       <div class="col-sm-6 col-lg-2 px-0"><a href="recrutement.html">Recrutement</a></div>
       <div class="col-sm-6 col-lg-2 px-0"><a href="mentionsLegales.html">Mentions légales</a></div>
-      <div class="col-sm-6 col-lg-2 px-0"><a href="conditionsGeneralesVente.html">Condititions générales de vente</a>
+      <div class="col-sm-6 col-lg-2 px-0"><a href="conditionsGeneralesVente.html">Conditions générales de vente</a>
       </div>
     </div>
     <div class="row mt-3 justify-content-center text-center">
-      <div class="col-6"><img src="../img/logoChambrodbeige.gif">
+      <div class="col-6"><img src="../img/logoChambrodbeige.gif" alt="logo hotel Chambord">
         <p> Hôtel Chambord - 1 avenue Montaigne 75008 PARIS</p>
       </div>
       <div class="row">
         <p class="col-12 text-center mb-0 mt-1"> © 2021 - Site non commercial réalisé dans le cadre d'un examen</p>
         <p class="col-12 text-center m-0">Réalisé par : Marie VIDAL & Julie BASSIL</p>
       </div>
+    </div>
   </footer>
   <!-- Appel fontawesome -->
   <script src="https://kit.fontawesome.com/abf72c1229.js" crossorigin="anonymous"></script>

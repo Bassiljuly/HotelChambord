@@ -3,6 +3,7 @@ $(function () {
   // ici le dom est chargé
 
 
+   
   /* ********************************************************************************* */
   /* SPA */
   // Effets sur les images de la page spa
@@ -11,7 +12,7 @@ $(function () {
       $(this).removeClass("hover");
     }
   );
-
+  
 
   /* ********************************************************************************* */
   // Panier
@@ -43,22 +44,29 @@ $(function () {
     $(`.afficheprix`).text(` ` + prixtotal + ` `);
   });
 
+ 
+
+      /* ********************************************************************************* */
+  // partage reseau : apparition des reseaux sociaux ou partgaer au click
+ 
+  
+   
+$(`.share`).on(`click`, function() {
+  $(`.reseaux`).toggleClass(`block`);
+})
+
+    
+      // //  meme action pour le tactile sur tablette et mobile
+      // $(`.share`).on('touchstart touchend', function () {
+      //   $(`.reseaux`).toggleClass('block');
+      // });
+
+    
+  
   //************************************************************************************** */
-  // empecher le rechargementd de la page lors de l'envoi du formulaire
-  //formulaire contact
+  // empecher le rechargement de la page lors de l'envoi du formulaire
+  //formulaire reservation
   $(`.resabtn`).click(function (event) {
-
-    event.preventDefault();
-  });
-
-  //formulaire choix avis
-  $(`.btnavis`).click(function (event) {
-
-    event.preventDefault();
-  });
-
-  //formulaire recrutement
-  $(`.btnrecrut`).click(function (event) {
 
     event.preventDefault();
   });
@@ -69,43 +77,16 @@ $(function () {
     event.preventDefault();
   });
 
-  /* ********************************************************************************* */
-  // page avis 
+  //formulaire contact
+  $(`.btnFormContact`).click(function (event) {
 
-
-  // $(`.btnavis`).on(`click`, function() {
-
-  //   let select = $(`.selecttype`);
-
-
-  //   if(select==`chambres`)
-  //   {
-  //     $(`.avisgeneral`).addClass(`none`);
-  //     $(`.avischambre`).addClass(`block`);
-  //   }
-  // })
-
-  // if(select==`chambres`)
-  // $(`.avisgeneral`).addClass('block');
-
-  // $(`.avisSend`).on(`click`, function() {
-  //   console.log('hello toi');
-  // })
-
-
-
-
-  /* ********************************************************************************* */
-  // partage reseau : apparition des reseaux sociaux ou partgaer au click
-
-  $(`.share`).on(`click`, function () {
-    $(`.reseaux`).toggleClass(`block`);
+    event.preventDefault();
   });
 
-  //  meme action pour le tactile sur tablette et mobile
-  $(`.share`).on(`touchstart touchend`, function () {
-    $(`.reseaux`).toggleClass(`block`);
-  });
+  //formulaire recrutement
+  $(`.btnrecrut`).click(function (event) {
 
+    event.preventDefault();
+  });
 
 });///////////////////////////////////
